@@ -1,0 +1,71 @@
+name: BK 
+description: "Beriya Learning App – an educational app to learn the Beriya language"
+version: 1.0.0+1
+
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.2
+  audioplayers: ^5.0.0
+  cupertino_icons: ^1.0.8
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.20.2
+  flutter_gen: ^5.4.0
+  provider: ^6.0.5
+  url_launcher: ^6.1.12
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.1
+  flutter_lints: ^5.0.0
+  #flutter_l10n: ^5.0.1
+  #flutter_launcher_name: ^0.0.1
+
+flutter_launcher_name:
+  name: "BK"
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/audio/
+    - assets/images/
+    - assets/images/characters/
+    - assets/images/words/
+    - assets/images/culture/
+
+  fonts:
+    - family: Kedebideri
+      fonts:
+        - asset: fonts/Kedebideri-Regular.ttf
+        - asset: fonts/Kedebideri-Medium.ttf
+          weight: 500
+        - asset: fonts/Kedebideri-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Kedebideri-Bold.ttf
+          weight: 700
+        - asset: fonts/Kedebideri-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/Kedebideri-Black.ttf
+          weight: 900
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/Beriyar_Kedebideri_logo.png"
+  adaptive_icon_background: "#004d26"
+  adaptive_icon_foreground: "assets/images/Beriyar_Kedebideri_logo.png"
+
+flutter_native_splash:
+  color: "#004d26"
+  image: assets/images/Beriyar_Kedebideri_logo.png
+  android: true
+  ios: true
